@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price List"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="24sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:id="@+id/textViewPriceListVeg" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aloo Tikki:                 Rs.28"
+                android:layout_marginTop="32dp"
+                android:textSize="16dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/buttonAlooTikki" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Royal Veggie:               Rs.55"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/buttonRoyalVeggie" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Veg Surprise:             Rs.70"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/buttonVegSurprise" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Royale Schezwan:           Rs.99"
+                android:textSize="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/buttonRoyaleSchezwan" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spicy Paneer:              Rs.109"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/buttonSpicyPaneer" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Angry Whopper:             Rs.129"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/buttonAngryWhopper" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maharaja Veg:              Rs.150"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/buttonMaharajaVeg" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Back To Veg"
+        android:id="@+id/buttonBackToVeg"
+        android:onClick="backToveg"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"/>
+
+</LinearLayout>

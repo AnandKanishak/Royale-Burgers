@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:id="@+id/imageViewmasalagrillchicken"
+                            android:layout_marginTop="8dp"
+                            android:src = "@drawable/masalagrillchicken"/>
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation = "horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="+"
+                            android:id="@+id/masalagrillchickenIncrement"
+                            android:onClick="masalagrillchickenInc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="0"
+                            android:layout_weight="2"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/masalagrillchickenQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:layout_weight="1"
+                            android:id="@+id/masalagrillchickenDecrement"
+                            android:onClick="masalagrillchickenDec"/>
+
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/imageViewfiletofish"
+                            android:src="@drawable/filetofish"/>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="+"
+                            android:id="@+id/filetofishIncrement"
+                            android:onClick="filetofishInc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="8dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/filetofishQuantity"/>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/filetofishDecrement"
+                            android:onClick="filetofishDec"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:id="@+id/imageViewchickenroyale"
+                            android:layout_marginTop="8dp"
+                            android:src = "@drawable/chickenroyale"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation = "horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="+"
+                            android:id="@+id/chickenroyaleIncrement"
+                            android:onClick="chickenroyaleInc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="8dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/chickenroyaleQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/chickenroyaleDecrement"
+                            android:onClick="chickenroyaleDec"/>
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/imageViewchickenschezwan"
+                            android:src="@drawable/chickenschezwan"/>
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="16dp"
+                            android:text="+"
+                            android:id="@+id/chickenschezwanIncrement"
+                            android:onClick="chickenschezwanInc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:layout_weight="2"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/chickenschezwanQuantity"/>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:layout_weight="1"
+                            android:id="@+id/chickenschezwanDecrement"
+                            android:onClick="chickenschezwanDec"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:id="@+id/imageViewspicychicken"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/spicychicken" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="+"
+                            android:id="@+id/spicychickenIncrement"
+                            android:onClick="spicychickenInc" />
+
+                        <TextView
+                            android:layout_width="00dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/spicychickenQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/spicychickenDecrement"
+                            android:onClick="spicychickenDec" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/imageViewangrychickenwhopper"
+                            android:src="@drawable/angrychickenwhopper" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="16dp"
+                            android:text="+"
+                            android:id="@+id/angrychickenwhopperIncrement"
+                            android:onClick="angrychickenwhopperInc" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/angrychickenwhopperQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/angrychickenwhopperDecrement"
+                            android:onClick="angrychickenwhopperDec" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:id="@+id/imageViewchickenmaharaja"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/chickenmaharaja" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="16dp"
+                            android:text="+"
+                            android:id="@+id/chickenmaharajaIncrement"
+                            android:onClick="chickenmaharajaInc" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/chickenmaharajaQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/chickenmaharajaDecrement"
+                            android:onClick="chickenmaharajaDec" />
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation = "horizontal"
+        android:background="@android:color/holo_blue_bright">
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="8dp"
+            android:text="PriceList"
+            android:id="@+id/buttonPriceList"
+            android:onClick="PriceList"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Price: "
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:layout_width="31dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:text = "Rs."
+            android:paddingTop="8dp"
+            android:layout_marginTop="4dp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:text = "0"
+            android:layout_weight="1"
+            android:id="@+id/totalPrice"
+            android:paddingTop="8dp"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="1dp"
+            android:text="Check Out"
+            android:onClick="checkOut"
+            android:id="@+id/buttonCheckOut"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

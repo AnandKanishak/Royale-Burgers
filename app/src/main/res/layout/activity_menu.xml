@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome.."
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:id="@+id/textViewWelcome" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:background="#880E4F"
+        android:textStyle="bold"
+        android:text="Veg"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/buttonVeg"
+        android:onClick="Veg"/>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="Non Veg"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:onClick = "Non Veg"
+        android:layout_marginTop="30dp"
+        android:background="#880E4F"
+        android:id="@+id/buttonNonveg" />
+
+</LinearLayout>
+
+
+

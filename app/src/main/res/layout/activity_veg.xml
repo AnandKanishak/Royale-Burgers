@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:id="@+id/imageViewalootikki"
+                            android:layout_marginTop="8dp"
+                            android:src = "@drawable/alootikki"/>
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation = "horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="+"
+                            android:id="@+id/alootikkiIncrement"
+                            android:onClick="alootikkiInc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="0"
+                            android:layout_weight="2"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/alootikkiQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:layout_weight="1"
+                            android:id="@+id/alootikkiDecrement"
+                            android:onClick="alootikkiDec"/>
+
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/imageViewroyalveggie"
+                            android:src="@drawable/royalveggie"/>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="+"
+                            android:id="@+id/royalveggieIncrement"
+                            android:onClick="royalveggieInc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="8dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/royalveggieQuantity"/>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/royalveggieDecrement"
+                            android:onClick="royalveggieDec"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:id="@+id/imageViewvegsurprise"
+                            android:layout_marginTop="8dp"
+                            android:src = "@drawable/vegsurprise"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation = "horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="+"
+                            android:id="@+id/vegsurpriseIncrement"
+                            android:onClick="vegsurpriseInc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="8dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/vegsurpriseQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/vegsurpriseDecrement"
+                            android:onClick="vegsurpriseDec"/>
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/imageViewroyaleschezwan"
+                            android:src="@drawable/royaleschezwan"/>
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="16dp"
+                            android:text="+"
+                            android:id="@+id/royaleschezwanIncrement"
+                            android:onClick="royaleschezwanInc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:layout_weight="2"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/royaleschezwanQuantity"/>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:layout_weight="1"
+                            android:id="@+id/royaleschezwanDecrement"
+                            android:onClick="royaleschezwanDec"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:id="@+id/imageViewspicypaneer"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/spicypaneer" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="+"
+                            android:id="@+id/spicypaneerIncrement"
+                            android:onClick="spicypaneerInc" />
+
+                        <TextView
+                            android:layout_width="00dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/spicypaneerQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/spicypaneerDecrement"
+                            android:onClick="spicypaneerDec" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/imageViewangrywhopper"
+                            android:src="@drawable/angrywhopper" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="16dp"
+                            android:text="+"
+                            android:id="@+id/angrywhopperIncrement"
+                            android:onClick="angrywhopperInc" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/angrywhopperQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/angrywhopperDecrement"
+                            android:onClick="angrywhopperDec" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:id="@+id/imageViewmaharajaveg"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/maharajaveg" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="16dp"
+                            android:text="+"
+                            android:id="@+id/maharajavegIncrement"
+                            android:onClick="maharajavegInc" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/maharajavegQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/maharajavegDecrement"
+                            android:onClick="maharajavegDec" />
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation = "horizontal"
+        android:background="@android:color/holo_blue_bright">
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="8dp"
+            android:text="PriceList"
+            android:id="@+id/buttonPriceList"
+            android:onClick="PriceList"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Price: "
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:layout_width="31dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:text = "Rs."
+            android:paddingTop="8dp"
+            android:layout_marginTop="4dp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:text = "0"
+            android:layout_weight="1"
+            android:id="@+id/totalPrice"
+            android:paddingTop="8dp"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="1dp"
+            android:text="Check Out"
+            android:onClick="checkOut"
+            android:id="@+id/buttonCheckOut"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
